@@ -1,21 +1,21 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Config
 %define		_pearname	%{_class}
+%define		_status		stable
 Summary:	%{_pearname} - class for reading and writing Config-"files"
 Summary(pl):	%{_pearname} - klasa do odczytu i zapisu plików konfiguracyjnych
 Name:		php-pear-%{_pearname}
-Version:	1.6
+Version:	1.7
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	1313908f9514cc95318a853e05391537
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	0544d43b2b85afa4ce77d7c52fb169f4
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 The Config package provides methods for editing configuration
@@ -27,6 +27,8 @@ intended for reading configuration data only, but for editing them. If
 you only want to read your configuration data, use functions like
 parse_ini_file() and the like instead, they are much faster.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Pakiet Config udostêpnia metody do edycji zasobów konfiguracyjnych.
 Robi to w sposób zorientowany obiektowo, definiuj±c ka¿dy element
@@ -36,6 +38,8 @@ modyfikowane, dodawane, usuwane, wstawiane. Ten pakiet nie ma s³u¿yæ
 tylko do czytania danych konfiguracyjnych, ale tak¿e do edycji ich.
 Tylko do czytania danych lepiej u¿ywaæ funkcji typu parse_ini_file(),
 które s± du¿o szybsze.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
