@@ -5,7 +5,7 @@ Summary:	%{_class} - class for reading and writing Config-"files"
 Summary(pl):	%{_class} - klasa do odczytu i zapisu plików konfiguracyjnych
 Name:		php-pear-%{_pearname}
 Version:	0.3.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
