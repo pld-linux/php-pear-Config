@@ -2,7 +2,7 @@
 %define		_class		Config
 %define		_pearname	%{_class}
 Summary:	%{_class} - class for reading and writing Config-"files"
-Summary(pl):	%{_class} - klasa do odczytu i zapisu Confog-"plików"
+Summary(pl):	%{_class} - klasa do odczytu i zapisu plików konfiguracyjnych
 Name:		php-pear-%{_pearname}
 Version:	0.3.1
 Release:	1
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Class for reading and writing Config-"files".
 
 %description -l pl
-Klasa do odczytu i zapisu Confog-"plików".
+Klasa do odczytu i zapisu plików konfiguracyjnych.
 
 %prep
 %setup -q -c
