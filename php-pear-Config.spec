@@ -27,7 +27,7 @@ intended for reading configuration data only, but for editing them. If
 you only want to read your configuration data, use functions like
 parse_ini_file() and the like instead, they are much faster.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Pakiet Config udostêpnia metody do edycji zasobów konfiguracyjnych.
