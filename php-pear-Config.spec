@@ -5,10 +5,11 @@ Summary:	%{_class} - class for reading and writing Config-"files"
 Summary(pl):	%{_class} - klasa do odczytu i zapisu plików konfiguracyjnych
 Name:		php-pear-%{_pearname}
 Version:	0.3.1
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+Patch0:		%{name}-cosmetic.patch
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov
 Requires:	php-pear
@@ -23,6 +24,7 @@ Klasa do odczytu i zapisu plików konfiguracyjnych.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
