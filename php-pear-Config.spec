@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Config
 %define		_pearname	%{_class}
-Summary:	%{_class} - class for reading and writing Config-"files"
-Summary(pl):	%{_class} - klasa do odczytu i zapisu plików konfiguracyjnych
+Summary:	%{_pearname} - class for reading and writing Config-"files"
+Summary(pl):	%{_pearname} - klasa do odczytu i zapisu plików konfiguracyjnych
 Name:		php-pear-%{_pearname}
 Version:	0.3.1
 Release:	3
