@@ -1,25 +1,40 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Config
 %define		_pearname	%{_class}
-Summary:	%{_class} - class for reading and writing Config-"files"
-Summary(pl):	%{_class} - klasa do odczytu i zapisu plików konfiguracyjnych
+Summary:	%{_pearname} - class for reading and writing Config-"files"
+Summary(pl):	%{_pearname} - klasa do odczytu i zapisu plików konfiguracyjnych
 Name:		php-pear-%{_pearname}
-Version:	0.3.1
-Release:	2
+Version:	1.1
+Release:	5
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/
-BuildRequires:	rpm-php-pearprov
+BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+
 %description
-Class for reading and writing Config-"files".
+The Config package provides methods for editing configuration
+datasources. It does so in an object oriented manner, defining each
+and every items found in the config datasource as a Config_Container
+of various types (comments, sections, directives, blanks, ...). Items
+can then be edited, added, removed, inserted. This package is not
+intended for reading configuration data only, but for editing them. If
+you only want to read your configuration data, use functions like
+parse_ini_file() and the like instead, they are much faster.
 
 %description -l pl
-Klasa do odczytu i zapisu plików konfiguracyjnych.
+Pakiet Config udostêpnia metody do edycji zasobów konfiguracyjnych.
+Robi to w sposób zorientowany obiektowo, definiuj±c ka¿dy element
+znaleziony w zasobie konfiguracyjnym jako Config_Container ró¿nych
+typów (komentarz, sekcja, dyrektywa, odstêp...). Elementy mog± byæ
+modyfikowane, dodawane, usuwane, wstawiane. Ten pakiet nie ma s³u¿yæ
+tylko do czytania danych konfiguracyjnych, ale tak¿e do edycji ich.
+Tylko do czytania danych lepiej u¿ywaæ funkcji typu parse_ini_file(),
+które s± du¿o szybsze.
 
 %prep
 %setup -q -c
@@ -37,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc %{_pearname}-%{version}/docs/*
 %dir %{php_pear_dir}/%{_class}
 %dir %{php_pear_dir}/%{_class}/Container
 %{php_pear_dir}/*.php
