@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - class for reading and writing Config-"files"
 Summary(pl):	%{_pearname} - klasa do odczytu i zapisu plików konfiguracyjnych
 Name:		php-pear-%{_pearname}
-Version:	1.10.5
+Version:	1.10.6
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	0d607d8f957042b974c33c279a5be084
+# Source0-md5:	7b7f88c6dc1271e43ebfee7d0b5dc127
 URL:		http://pear.php.net/package/Config/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
