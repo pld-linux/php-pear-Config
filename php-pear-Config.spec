@@ -4,7 +4,7 @@
 %define		_status		stable
 
 Summary:	%{_pearname} - class for reading and writing Config-"files"
-Summary(pl):	%{_pearname} - klasa do odczytu i zapisu plików konfiguracyjnych
+Summary(pl.UTF-8):   %{_pearname} - klasa do odczytu i zapisu plikÃ³w konfiguracyjnych
 Name:		php-pear-%{_pearname}
 Version:	1.10.9
 Release:	1
@@ -34,21 +34,21 @@ parse_ini_file() and the like instead, they are much faster.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Pakiet Config udostêpnia metody do edycji zasobów konfiguracyjnych.
-Robi to w sposób zorientowany obiektowo, definiuj±c ka¿dy element
-znaleziony w zasobie konfiguracyjnym jako Config_Container ró¿nych
-typów (komentarz, sekcja, dyrektywa, odstêp...). Elementy mog± byæ
-modyfikowane, dodawane, usuwane, wstawiane. Ten pakiet nie ma s³u¿yæ
-tylko do czytania danych konfiguracyjnych, ale tak¿e do edycji ich.
-Tylko do czytania danych lepiej u¿ywaæ funkcji typu parse_ini_file(),
-które s± du¿o szybsze.
+%description -l pl.UTF-8
+Pakiet Config udostÄ™pnia metody do edycji zasobÃ³w konfiguracyjnych.
+Robi to w sposÃ³b zorientowany obiektowo, definiujÄ…c kaÅ¼dy element
+znaleziony w zasobie konfiguracyjnym jako Config_Container rÃ³Å¼nych
+typÃ³w (komentarz, sekcja, dyrektywa, odstÄ™p...). Elementy mogÄ… byÄ‡
+modyfikowane, dodawane, usuwane, wstawiane. Ten pakiet nie ma sÅ‚uÅ¼yÄ‡
+tylko do czytania danych konfiguracyjnych, ale takÅ¼e do edycji ich.
+Tylko do czytania danych lepiej uÅ¼ywaÄ‡ funkcji typu parse_ini_file(),
+ktÃ³re sÄ… duÅ¼o szybsze.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -57,7 +57,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
