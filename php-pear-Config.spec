@@ -4,7 +4,7 @@
 %define		_status		stable
 
 Summary:	%{_pearname} - class for reading and writing Config-"files"
-Summary(pl.UTF-8):   %{_pearname} - klasa do odczytu i zapisu plików konfiguracyjnych
+Summary(pl.UTF-8):	%{_pearname} - klasa do odczytu i zapisu plików konfiguracyjnych
 Name:		php-pear-%{_pearname}
 Version:	1.10.9
 Release:	1
@@ -48,7 +48,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
