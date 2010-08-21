@@ -7,7 +7,7 @@ Summary:	%{_pearname} - class for reading and writing Config-"files"
 Summary(pl.UTF-8):	%{_pearname} - klasa do odczytu i zapisu plików konfiguracyjnych
 Name:		php-pear-%{_pearname}
 Version:	1.10.11
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,6 +17,8 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
+Suggests:	php-pear-XML_Parser
+Suggests:	php-pear-XML_Util
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -51,8 +53,8 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
-AutoReq:	no
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
