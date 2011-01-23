@@ -19,6 +19,7 @@ BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Suggests:	php-pear-XML_Parser
 Suggests:	php-pear-XML_Util
+Obsoletes:	php-pear-Config-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -48,20 +49,6 @@ które są dużo szybsze.
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{version}-%{release}
-AutoProv:	no
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
-
 %prep
 %pear_package_setup
 
@@ -85,7 +72,3 @@ fi
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_class}
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/*
