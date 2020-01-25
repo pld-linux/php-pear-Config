@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		Config
 %define		_pearname	%{_class}
 %define		_status		stable
